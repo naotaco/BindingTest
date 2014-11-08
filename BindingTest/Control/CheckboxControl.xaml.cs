@@ -19,7 +19,7 @@ namespace BindingTest.Control
             "Checked",
             typeof(bool),
             typeof(CheckboxControl),
-            new PropertyMetadata(new PropertyChangedCallback(CheckboxControl.StateChanged)));
+            new PropertyMetadata(false, new PropertyChangedCallback(CheckboxControl.StateChanged)));
 
         private static void StateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
